@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        background-color: whitesmoke;
+    }
+
+    header {
+        background-color: whitesmoke;
+        padding: 22px;
+        display: flex;
+        margin-top: 22px;
+    }
+
+    .head {
+        width: 200px;
+        height: 80px;
+        margin: 0;
+        filter: none;
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: Blur(PixelRadius='0');
+        border: none;
+
+    }
+    .persons li:hover {border-bottom: none;}
+    ul {
+        text-align: center;
+        margin-left: 450px;
+        display: inline-flex;
+        background: whitesmoke;
+    }
+
+    li {
+        padding-left: 15px;
+        list-style: none;
+        margin: 15px;
+        font-size: 22px;
+        color: gray;
+    }
+
+
+    input[type="button"] {
+        margin-left: 300px;
+        color: gray;
+        padding: 10px;
+        height: 60px;
+        width: 180px;
+        background-color: lightcoral;
+        border-radius: 50px;
+        font-size: 22px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input[type="button"]:hover {
+        color: black;
+    }
+
+    li:hover {
+        color: black;
+        border-bottom: 4px solid blue;
+    }
+
+    .right {
+        float: right;
+        width: 50%;
+
+    }
+
+    .left {
+        width: 30%;
+        float: left;
+
+    }
+
+    h1 {
+        margin-top: 50px;
+        font-size: 58px;
+        margin-left: 100px;
+    }
+
+    p {
+        margin-left: 110px;
+    }
+
+    .main-image {
+        background-color: white;
+        width: 80%;
+    }
+
+    .dot {
+        width: 20px;
+        height: 20px;
+        background-color: blue;
+        display: inline-block;
+    }
+
+    .my {
+        margin-top: 30px;
+        border: 2px solid black;
+        padding: 16px;
+        display: inline-block;
+        margin-left: 110px;
+        border-radius: 50px;
+        color: white;
+        background-color: blue;
+    }
+
+    .arrow {
+        margin-left: 30px;
+        font-size: 22px;
+        border-radius: 20px;
+        font-weight: bolder;
+        border: 2px solid gray;
+        padding: 10px;
+    }
+
+    #up {
+        color: lightgray;
+        border-color: lightgray;
+
+    }
+
+    .persons {
+        margin-top: 60px;
+    }
+
+    .ticks {
+        list-style: none;
+        border: 2px solid gray;
+        display: flex;
+        width: 15px;
+        text-align: start;
+    }
+
+    #ticks {
+        display: flex;
+        padding: 2px;
+    }
+
+    .small {
+        width: 20px;
+        height: 10px;
+        background-color: blue;
+        display: inline-flex;
+        border-radius: 22px;
+        border: none;
+    }
+
+    .small1 {
+        width: 20px;
+        height: 10px;
+        background-color: red;
+        display: inline-flex;
+        border-radius: 22px;
+        border: none;
+    }
+
+    .small2 {
+        width: 20px;
+        height: 10px;
+        background-color: lightgreen;
+        display: inline-flex;
+        border-radius: 22px;
+        border: none;
+    }
+
+    .small4 {
+        width: 20px;
+        height: 10px;
+        background-color: yellow;
+        display: inline-flex;
+        border-radius: 22px;
+        border: none;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="circle">
+            <img src="head.jpeg" class="head" alt="logo">
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Jobs</li>
+        </ul>
+        <input type="button" value="Your Account">
+    </header>
+    <div class="left">
+        <h1>Stunning<br>Workplace <div class="dot"></div>
+        </h1>
+        <p>with,Stunning remote teams can be organize projects, <br>Manage shifiting priorities, and get work done.</p>
+        <span class="my">New Account</span>
+        <span class="arrow" id="up">&#8593; </span>
+        <span class="arrow" id="down">&#8595;</span>
+        <div class="persons">
+            <li>
+                <img src="ticks.jpeg" alt="whitetick" id="white">&nbsp;&nbsp; Dmm design &nbsp;&nbsp;&nbsp;&nbsp;<img
+                    src="person 1.jpeg" alt="">&nbsp;&nbsp;&nbsp;&nbsp;20 Dec &nbsp;&nbsp;<span class="small"></span>
+            </li>
+            <li><img src="blue.jpeg" alt="blue" id="blue">&nbsp;&nbsp;Blur animation &nbsp;&nbsp;&nbsp;&nbsp;<img
+                    src="person 2.jpeg" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22 Dec <span class="small1"></span>
+            </li>
+            <li>
+                <img src="ticks.jpeg" alt="whitetick" id="white">&nbsp;&nbsp;illustration
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;<img src="person 3.jpeg" alt=""> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;26 Dec <span
+                    class="small2"></span>
+            </li>
+            <li><img src="ticks.jpeg" alt="whitetick"
+                    id="white">&nbsp;&nbsp;Refunds&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                    src="person 4.jpeg" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;28 Dec &nbsp;&nbsp;<span
+                    class="small4"></span>
+            </li>
+        </div>
+    </div>
+    <div class="right">
+        <img src="rightimage.jpeg" alt="" class="main-image">
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
